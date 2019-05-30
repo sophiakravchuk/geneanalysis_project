@@ -17,7 +17,8 @@ Program structure:
 
 Instructions of using the program.
 
-Step 1.
+- Step 1
+
 There will be text describing the program printed and user has to press Enter to start.
 The text printed:
 “Hello! It is the gene analytic program!
@@ -28,13 +29,16 @@ BLAST can be used to infer functional and evolutionary relationships between seq
 as well as help identify members of gene families.
 Press Enter to start!”
 
-Step 2 
+- Step 2
+
 The user will has to enter the name of the gene to analyze.
 
-Step 3 
+- Step 3 
+
 There will be printed a list of databases of organisms. The user will has to enter the number of the database to analyse.
 
-Step 4 
+- Step 4 
+
 The user has to wait. There will be printing “Blasting... Will get result in 3 seconds” each 3 seconds. If the result is not ready in 300 seconds the program raises error with the text “Time is out for blasting!”
 
 Documentation
