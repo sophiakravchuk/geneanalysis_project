@@ -31,6 +31,4 @@ There will be printed a list of databases of organisms. The user will has to ent
 The user has to wait. There will be printing “Blasting... Will get result in 3 seconds” each 3 seconds. If the result is not ready in 300 seconds the program raises error with the text “Time is out for blasting!”
 Documentation
 Documentation is located in docs folder.  
-Developer
-Anastasiya Lyatska
 
