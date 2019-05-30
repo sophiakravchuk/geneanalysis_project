@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>arrays module &#8212; geneanalysis_project 1.0.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-arrays">
+<span id="arrays-module"></span><h1>arrays module<a class="headerlink" href="#module-arrays" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="arrays.Array">
+<em class="property">class </em><code class="descclassname">arrays.</code><code class="descname">Array</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.Array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Creates an array with size elements.</p>
+<dl class="method">
+<dt id="arrays.Array.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.Array.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the array by setting each element to the given value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="arrays.Array2D">
+<em class="property">class </em><code class="descclassname">arrays.</code><code class="descname">Array2D</code><span class="sig-paren">(</span><em>num_rows</em>, <em>num_cols</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.Array2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Creates a 2 -D array of size numRows x numCols.</p>
+<dl class="attribute">
+<dt id="arrays.Array2D.COL_INDEX">
+<code class="descname">COL_INDEX</code><em class="property"> = 1</em><a class="headerlink" href="#arrays.Array2D.COL_INDEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="arrays.Array2D.ROW_INDEX">
+<code class="descname">ROW_INDEX</code><em class="property"> = 0</em><a class="headerlink" href="#arrays.Array2D.ROW_INDEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="arrays.Array2D.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.Array2D.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the array by setting every element to the given value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="arrays.Array2D.num_cols">
+<code class="descname">num_cols</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arrays.Array2D.num_cols" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of columns in the 2 -D array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="arrays.Array2D.num_rows">
+<code class="descname">num_rows</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arrays.Array2D.num_rows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of rows in the 2 -D array.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="arrays.DynamicArray">
+<em class="property">class </em><code class="descclassname">arrays.</code><code class="descname">DynamicArray</code><a class="headerlink" href="#arrays.DynamicArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A dynamic array class akin to a simplified Python list.</p>
+<dl class="attribute">
+<dt id="arrays.DynamicArray.INITIAL_CAPACITY">
+<code class="descname">INITIAL_CAPACITY</code><em class="property"> = 1</em><a class="headerlink" href="#arrays.DynamicArray.INITIAL_CAPACITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="arrays.DynamicArray.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.DynamicArray.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add object to end of the array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="arrays.DynamicArray.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><em>value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.DynamicArray.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the array by setting each element to the given value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="arrays.DynamicArray.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>k</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.DynamicArray.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert value at index k, shifting subsequent values rightward.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="arrays.DynamicArray.pop">
+<code class="descname">pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arrays.DynamicArray.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="arrays.DynamicArray.remove">
+<code class="descname">remove</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#arrays.DynamicArray.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove first occurrence of value( or  raise ValueError).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">geneanalysis_project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, sophiakravchuk.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst/arrays.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

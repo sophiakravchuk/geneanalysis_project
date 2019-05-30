@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GeneFasta module &#8212; geneanalysis_project 1.0.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-GeneFasta">
+<span id="genefasta-module"></span><h1>GeneFasta module<a class="headerlink" href="#module-GeneFasta" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="GeneFasta.GeneFasta">
+<em class="property">class </em><code class="descclassname">GeneFasta.</code><code class="descname">GeneFasta</code><span class="sig-paren">(</span><em>gene_name</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class that does all the work</p>
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.blast_text_from_rid">
+<code class="descname">blast_text_from_rid</code><span class="sig-paren">(</span><em>rid</em>, <em>cached=False</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.blast_text_from_rid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the blast text from rid
+:param rid: RID
+:param cached: True if the inf was cached or False if it was not
+:return: the blast text</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.gene_fasta_from_fasta_link">
+<code class="descname">gene_fasta_from_fasta_link</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.gene_fasta_from_fasta_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the fasta from fasta link.
+Raises the exception if no fasta link found for gene Id
+:return: gene fasta</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.gene_id_to_fasta_link">
+<code class="descname">gene_id_to_fasta_link</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.gene_id_to_fasta_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the fasta link from gene id
+Raises exception if the fasta is not such gene link.
+Raises exception if the fasta is not found for the gene id.
+:return: the fasta link</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.gene_name_to_id">
+<code class="descname">gene_name_to_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.gene_name_to_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the link to the gene by its name.
+Raises the exception if there is no gene with such a name.
+Raises the exception if there is no link for this gene name.
+:return: link to the gene</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.get_blast_res">
+<code class="descname">get_blast_res</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_blast_res" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the results of blast.
+Raises exception if the time of waiting is bigger then 300 seconds</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.get_blast_rid">
+<code class="descname">get_blast_rid</code><span class="sig-paren">(</span><em>organism</em>, <em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_blast_rid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the blast RID</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.get_db">
+<code class="descname">get_db</code><span class="sig-paren">(</span><em>db_str</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.get_fasta_">
+<code class="descname">get_fasta_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_fasta_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the fasta</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.get_fasta_link">
+<code class="descname">get_fasta_link</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_fasta_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the fasta link</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.get_gene_id">
+<code class="descname">get_gene_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_gene_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the gene ID</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GeneFasta.GeneFasta.get_html">
+<em class="property">static </em><code class="descname">get_html</code><span class="sig-paren">(</span><em>link</em>, <em>link_id</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.get_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the information by the link.
+Checks whether that file is already in cache and
+if it is gets information from it,
+if it is not gets the information by the link.
+:param link: the link to the information
+(link to the gene, link to the database, link to the fasta etc.)
+:param link_id: the id for link (for the cachefile name)
+(name of the gene, code of database, id of fasta etc.)</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GeneFasta.GeneFasta.param_value_from_link">
+<em class="property">static </em><code class="descname">param_value_from_link</code><span class="sig-paren">(</span><em>link</em>, <em>param_name</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.param_value_from_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of parameter from the link.
+example: return 222 by call(“<a class="reference external" href="http://asdf.asdf.com/link?param1=222&amp;param2=111">http://asdf.asdf.com/link?param1=222&amp;param2=111</a>”, “param1”)
+:param link: the link to work with
+:param param_name: the name of parameter
+:return: parameter value</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GeneFasta.GeneFasta.request_html">
+<em class="property">static </em><code class="descname">request_html</code><span class="sig-paren">(</span><em>is_get</em>, <em>link</em>, <em>params</em>, <em>cache_id</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.request_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the information by the link with the method get or put.
+Checks whether that file is already in cache and
+if it is gets information from it,
+if it is not gets the information by the link.
+:param is_get: True if the method to use is get and False if the method is put
+:param link: link to the NCBI Blast
+:param params: a dictionary of parameters for link (QUERY, PROGRAM, CMD, DATABASE)
+:param cache_id: id for cachefile
+:return: information</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GeneFasta.GeneFasta.rid_from_fasta">
+<code class="descname">rid_from_fasta</code><span class="sig-paren">(</span><em>organism</em>, <em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#GeneFasta.GeneFasta.rid_from_fasta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the RID from fasta
+:param organism: number of database
+:param db: link to databases
+:return: RID</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">geneanalysis_project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, sophiakravchuk.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst/GeneFasta.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

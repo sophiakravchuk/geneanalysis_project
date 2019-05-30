@@ -1,0 +1,10 @@
+This program allows you easily receive the report of blasting the genes.
+BLAST or Basic Local Alignment Search Tool finds regions of similarity between biological sequences.
+The program compares nucleotide or protein	sequences to sequence databases and calculates the statistical significance.
+
+Firstly, you have to enter the name of the gene you want to compare.
+
+Then you should choose between the given databases of organisms you want your gene to compare with,
+you have to enter the number that is written before the name of the database.
+
+Press Enter to start!

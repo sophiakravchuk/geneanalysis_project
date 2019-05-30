@@ -1,0 +1,3 @@
+Human genomic | "GPIPE/9606/current/all_top_level"
+Mouse genomic | "GPIPE/10090/current/all_top_level"
+Others (nr etc.) | "nr"
